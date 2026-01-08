@@ -1,5 +1,6 @@
 package net.boblercat.tutorialmod;
 
+import net.boblercat.tutorialmod.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		Moditems.registerModItems();
 
 		LOGGER.info("Hello Fabric world!");
 	}

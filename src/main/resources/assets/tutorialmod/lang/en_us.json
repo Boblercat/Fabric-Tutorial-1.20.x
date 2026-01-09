@@ -1,3 +1,10 @@
 {
-  "item.tutorialmod.zynite": "Zynite"
+  "item.tutorialmod.zynite": "Zynite",
+  "item.tutorialmod.raw_zynite": "Raw Zynite",
+  "item.tutorialmod.pure_zynite": "Pure Zynite",
+
+  "block.tutorialmod.zynite_block": "Block of Zynite",
+
+
+  "itemgroup.zynite": "Lowkirkenuenly items"
 }

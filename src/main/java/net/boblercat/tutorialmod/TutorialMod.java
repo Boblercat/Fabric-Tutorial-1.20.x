@@ -1,5 +1,7 @@
 package net.boblercat.tutorialmod;
 
+import net.boblercat.tutorialmod.block.ModBlocks;
+import net.boblercat.tutorialmod.item.ModItemGroups;
 import net.boblercat.tutorialmod.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,7 +14,9 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		Moditems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}

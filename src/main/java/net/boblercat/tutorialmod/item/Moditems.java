@@ -14,9 +14,13 @@ import net.minecraft.util.Identifier;
 
 public class Moditems {
     public static final Item ZYNITE = registerItem("zynite",new Item(new FabricItemSettings()));
+    public static final Item RAW_ZYNITE = registerItem("raw_zynite",new Item(new FabricItemSettings()));
+    public static final Item PURE_ZYNITE = registerItem("pure_zynite",new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(ZYNITE);
+        entries.add(Moditems.PURE_ZYNITE);
+        entries.add(RAW_ZYNITE);
     }
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);

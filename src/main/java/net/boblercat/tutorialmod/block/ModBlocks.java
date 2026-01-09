@@ -14,7 +14,9 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block ZYNITE_BLOCK = registerBlock("zynite_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.REDSTONE_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RAW_ZYNITE_BLOCK = registerBlock("raw_zynite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundGroup.DECORATED_POT_SHATTER)));
 
 
     private static Block registerBlock(String name, Block block){

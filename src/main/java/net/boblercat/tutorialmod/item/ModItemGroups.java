@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(Moditems.PURE_ZYNITE);
                         entries.add(Moditems.RAW_ZYNITE);
                         entries.add(ModBlocks.ZYNITE_BLOCK);
+                        entries.add(ModBlocks.RAW_ZYNITE_BLOCK);
 
                     }).build());
 

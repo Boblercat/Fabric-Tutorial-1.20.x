@@ -2,6 +2,7 @@ package net.boblercat.tutorialmod;
 
 import net.boblercat.tutorialmod.block.ModBlocks;
 import net.boblercat.tutorialmod.item.ModItemGroups;
+import net.boblercat.tutorialmod.item.ModRecipes;
 import net.boblercat.tutorialmod.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,6 +18,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		Moditems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModRecipes.registerRecipes();
 
 		LOGGER.info("Hello Fabric world!");
 	}

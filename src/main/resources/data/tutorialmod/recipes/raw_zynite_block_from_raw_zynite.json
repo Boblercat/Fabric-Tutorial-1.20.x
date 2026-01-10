@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:raw_zynite"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:raw_zynite_block"
+  }
+}

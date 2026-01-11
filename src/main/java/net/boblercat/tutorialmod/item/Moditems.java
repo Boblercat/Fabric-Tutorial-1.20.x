@@ -1,6 +1,7 @@
 package net.boblercat.tutorialmod.item;
 
 import net.boblercat.tutorialmod.TutorialMod;
+import net.boblercat.tutorialmod.item.custom.MetalDetectorItem;
 import net.fabricmc.fabric.api.client.networking.v1.C2SPlayChannelEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -17,6 +18,8 @@ public class Moditems {
     public static final Item RAW_ZYNITE = registerItem("raw_zynite",new Item(new FabricItemSettings()));
     public static final Item PURE_ZYNITE = registerItem("pure_zynite",new Item(new FabricItemSettings()));
     public static final Item ORB_OF_RANDOM = registerItem("random_orb",new Item(new FabricItemSettings()));
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(ZYNITE);

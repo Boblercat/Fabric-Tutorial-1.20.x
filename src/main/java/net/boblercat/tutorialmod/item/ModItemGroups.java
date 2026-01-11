@@ -18,8 +18,13 @@ public class ModItemGroups {
                         entries.add(Moditems.PURE_ZYNITE);
                         entries.add(Moditems.RAW_ZYNITE);
                         entries.add(Moditems.ORB_OF_RANDOM);
+                        entries.add(Moditems.METAL_DETECTOR);
                         entries.add(ModBlocks.ZYNITE_BLOCK);
                         entries.add(ModBlocks.RAW_ZYNITE_BLOCK);
+                        entries.add(ModBlocks.ZYNITE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_ZYNITE_ORE);
+                        entries.add(ModBlocks.NETHER_ZYNITE_ORE);
+                        entries.add(ModBlocks.END_STONE_ZYNITE_ORE);
 
 
                     }).build());

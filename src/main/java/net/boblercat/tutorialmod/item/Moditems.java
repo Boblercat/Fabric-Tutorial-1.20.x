@@ -18,6 +18,8 @@ public class Moditems {
     public static final Item RAW_ZYNITE = registerItem("raw_zynite",new Item(new FabricItemSettings()));
     public static final Item PURE_ZYNITE = registerItem("pure_zynite",new Item(new FabricItemSettings()));
     public static final Item ORB_OF_RANDOM = registerItem("random_orb",new Item(new FabricItemSettings()));
+    public static final Item TOMATO = registerItem("tomato",new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+    public static final Item COOLER_COAL = registerItem("cooler_coal",new Item(new FabricItemSettings()));
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
 

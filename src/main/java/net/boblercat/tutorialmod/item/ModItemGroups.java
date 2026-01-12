@@ -25,6 +25,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_ZYNITE_ORE);
                         entries.add(ModBlocks.NETHER_ZYNITE_ORE);
                         entries.add(ModBlocks.END_STONE_ZYNITE_ORE);
+                        entries.add(ModBlocks.SOUNDBLOCK);
+                        entries.add(Moditems.TOMATO);
+                        entries.add(Moditems.COOLER_COAL);
 
 
                     }).build());

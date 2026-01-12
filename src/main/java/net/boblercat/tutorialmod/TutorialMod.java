@@ -6,6 +6,7 @@ import net.boblercat.tutorialmod.item.ModRecipes;
 import net.boblercat.tutorialmod.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +20,8 @@ public class TutorialMod implements ModInitializer {
 		Moditems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModRecipes.registerRecipes();
+
+		FuelRegistry.INSTANCE.add(Moditems.COOLER_COAL,2800);
 
 		LOGGER.info("Hello Fabric world!");
 	}

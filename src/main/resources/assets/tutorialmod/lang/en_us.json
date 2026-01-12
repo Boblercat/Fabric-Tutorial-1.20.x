@@ -4,6 +4,8 @@
   "item.tutorialmod.pure_zynite": "Pure Zynite",
   "item.tutorialmod.random_orb": "The Orb of Randomness",
   "item.tutorialmod.metal_detector": "Metal Detector",
+  "item.tutorialmod.tomato": "Tomato",
+  "item.tutorialmod.cooler_coal": "cooler_coal",
 
 
   "block.tutorialmod.zynite_block": "Block of Zynite",
@@ -12,6 +14,7 @@
   "block.tutorialmod.deepslate_zynite_ore": "Deepslate Zynite Ore",
   "block.tutorialmod.nether_zynite_ore": "Nether Zynite Ore",
   "block.tutorialmod.end_stone_zynite_ore": "End Zynite Ore",
+  "block.tutorialmod.soundblock": "SoundBlock",
 
 
 

@@ -1,6 +1,7 @@
 package net.boblercat.tutorialmod.block;
 
 import net.boblercat.tutorialmod.TutorialMod;
+import net.boblercat.tutorialmod.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -27,6 +28,8 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(20.0f), UniformIntProvider.create(4,7)));
     public static final Block END_STONE_ZYNITE_ORE = registerBlock("end_stone_zynite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(25.0f), UniformIntProvider.create(6,9)));
+    public static final Block SOUNDBLOCK = registerBlock("soundblock",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundGroup.DECORATED_POT_SHATTER)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItems(name,block);

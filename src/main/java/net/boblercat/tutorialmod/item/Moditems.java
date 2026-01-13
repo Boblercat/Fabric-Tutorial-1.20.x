@@ -3,6 +3,7 @@ package net.boblercat.tutorialmod.item;
 import net.boblercat.tutorialmod.TutorialMod;
 import net.boblercat.tutorialmod.item.custom.MetalDetectorItem;
 import net.boblercat.tutorialmod.item.custom.UnstableOrbItem;
+import net.boblercat.tutorialmod.item.custom.WitheringShankItem;
 import net.fabricmc.fabric.api.client.networking.v1.C2SPlayChannelEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -31,6 +32,7 @@ public class Moditems {
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
     public static final Item UNSTABLE_ORB = registerItem("unstable_orb",new UnstableOrbItem(new FabricItemSettings()));
+    public static final Item WITHERING_SHANK = registerItem("withering_shank",new WitheringShankItem(new FabricItemSettings().maxDamage(1)));
     public static final Item INDEX_ORB = registerItem("index_orb",new Item(new FabricItemSettings().maxCount(1)){
         @Override
         public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {

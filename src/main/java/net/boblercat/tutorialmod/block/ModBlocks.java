@@ -4,9 +4,7 @@ import net.boblercat.tutorialmod.TutorialMod;
 import net.boblercat.tutorialmod.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -29,7 +27,30 @@ public class ModBlocks {
     public static final Block END_STONE_ZYNITE_ORE = registerBlock("end_stone_zynite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(25.0f), UniformIntProvider.create(6,9)));
     public static final Block SOUNDBLOCK = registerBlock("soundblock",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundGroup.DECORATED_POT_SHATTER)));
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block ZYNITE_STAIRS = registerBlock("zynite_stairs",
+            new StairsBlock(ModBlocks.ZYNITE_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block ZYNITE_SLAB = registerBlock("zynite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block ZYNITE_BUTTON = registerBlock("zynite_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),BlockSetType.IRON,20,true));
+    public static final Block ZYNITE_PRESSURE_PLATE = registerBlock("zynite_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),BlockSetType.IRON));
+
+    public static final Block ZYNITE_FENCE = registerBlock("zynite_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block ZYNITE_FENCE_GATE = registerBlock("zynite_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),WoodType.BIRCH));
+    public static final Block ZYNITE_WALL = registerBlock("zynite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block ZYNITE_DOOR = registerBlock("zynite_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(),BlockSetType.IRON));
+    public static final Block ZYNITE_TRAPDOOR = registerBlock("zynite_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(),BlockSetType.IRON));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItems(name,block);

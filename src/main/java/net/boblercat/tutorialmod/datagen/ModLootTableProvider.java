@@ -34,6 +34,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHER_ZYNITE_ORE,oreDropsWithBonus(ModBlocks.NETHER_ZYNITE_ORE, Moditems.RAW_ZYNITE,1.0f,2.0f,Moditems.RANDOM_ORB,0.05f));
         addDrop(ModBlocks.END_STONE_ZYNITE_ORE,oreDropsWithBonus(ModBlocks.END_STONE_ZYNITE_ORE, Moditems.RAW_ZYNITE,2.0f,3.0f,Moditems.RANDOM_ORB,0.8f));
 
+        addDrop(ModBlocks.ZYNITE_FENCE);
+        addDrop(ModBlocks.ZYNITE_FENCE_GATE);
+        addDrop(ModBlocks.ZYNITE_WALL);
+        addDrop(ModBlocks.ZYNITE_TRAPDOOR);
+        addDrop(ModBlocks.ZYNITE_PRESSURE_PLATE);
+        addDrop(ModBlocks.ZYNITE_BUTTON);
+        addDrop(ModBlocks.ZYNITE_STAIRS);
+
+        addDrop(ModBlocks.ZYNITE_DOOR,doorDrops(ModBlocks.ZYNITE_DOOR));
+        addDrop(ModBlocks.ZYNITE_SLAB,slabDrops(ModBlocks.ZYNITE_SLAB));
     }
 
     public LootTable.Builder advancedOreDrops(Block drop, Item item, float min, float max) {

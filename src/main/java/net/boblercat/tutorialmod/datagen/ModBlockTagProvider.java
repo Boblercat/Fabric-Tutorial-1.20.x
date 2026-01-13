@@ -55,5 +55,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_ZYNITE_ORE)
                 .add(ModBlocks.RAW_ZYNITE_BLOCK)
                 ;
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.ZYNITE_FENCE)
+        ;
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ZYNITE_FENCE_GATE)
+        ;
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ZYNITE_WALL)
+        ;
+        getOrCreateTagBuilder(BlockTags.DOORS)
+                .add(ModBlocks.ZYNITE_DOOR)
+        ;
+        getOrCreateTagBuilder(BlockTags.TRAPDOORS)
+                .add(ModBlocks.ZYNITE_TRAPDOOR)
+        ;
     }
 }

@@ -29,6 +29,16 @@ public class ModItemGroups {
                         entries.add(Moditems.TOMATO);
                         entries.add(Moditems.COOLER_COAL);
                         entries.add(Moditems.INDEX_ORB);
+                        entries.add(Moditems.WITHERING_SHANK);
+                        entries.add(ModBlocks.ZYNITE_STAIRS);
+                        entries.add(ModBlocks.ZYNITE_SLAB);
+                        entries.add(ModBlocks.ZYNITE_BUTTON);
+                        entries.add(ModBlocks.ZYNITE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.ZYNITE_WALL);
+                        entries.add(ModBlocks.ZYNITE_FENCE);
+                        entries.add(ModBlocks.ZYNITE_FENCE_GATE);
+                        entries.add(ModBlocks.ZYNITE_DOOR);
+                        entries.add(ModBlocks.ZYNITE_TRAPDOOR);
 
 
                     }).build());

@@ -8,6 +8,7 @@
   "item.tutorialmod.cooler_coal": "Cooler Coal",
   "item.tutorialmod.unstable_orb": "Unstable Orb",
   "item.tutorialmod.index_orb": "Index Orb",
+  "item.tutorialmod.withering_shank": "Withering Shank",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.unstable_orb.tooltip": "I wonder what I'll get?",
@@ -22,6 +23,15 @@
   "block.tutorialmod.end_stone_zynite_ore": "End Zynite Ore",
   "block.tutorialmod.soundblock": "SoundBlock",
 
+  "block.tutorialmod.zynite_stairs": "Zynite Stairs",
+  "block.tutorialmod.zynite_slab": "Zynite Slab",
+  "block.tutorialmod.zynite_button": "Zynite Button",
+  "block.tutorialmod.zynite_pressure_plate": "Zynite Pressure Plate",
+  "block.tutorialmod.zynite_door": "Zynite Door",
+  "block.tutorialmod.zynite_trapdoor": "Zynite Trapdoor",
+  "block.tutorialmod.zynite_fence": "Zynite Fence",
+  "block.tutorialmod.zynite_fence_gate": "Zynite Fence Gate",
+  "block.tutorialmod.zynite_wall": "Zynite Wall",
 
 
   "itemgroup.zynite": "Lowkirkenuenly items"

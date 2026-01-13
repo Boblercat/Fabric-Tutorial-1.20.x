@@ -12,6 +12,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -43,9 +44,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE),conditionsFromItem(Items.STONE))
                 .offerTo(exporter,new Identifier(getRecipeName(Moditems.RAW_ZYNITE)));
         offerShapelessRecipe(exporter, Blocks.NOTE_BLOCK,ModBlocks.SOUNDBLOCK,"redstone",1);
+        offerShapelessRecipe(exporter, ModBlocks.SOUNDBLOCK,Blocks.NOTE_BLOCK,"redstone",1);
         ComplexRecipeJsonBuilder.create(ModRecipes.MYSTERY_RECIPE_SERIALIZER)
                 .offerTo(exporter,"orb_recipe");
         ComplexRecipeJsonBuilder.create(ModRecipes.INDEX_RECIPE_SERIALIZER)
                 .offerTo(exporter,"index_recipe");
+        offerShapelessRecipe(exporter,ModBlocks.ZYNITE_BUTTON,Moditems.ZYNITE,"redstone",1);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.ZYNITE_SLAB,ModBlocks.ZYNITE_BLOCK);
+        offerPressurePlateRecipe(exporter,ModBlocks.ZYNITE_PRESSURE_PLATE,Moditems.ZYNITE);
+        offerWallRecipe(exporter,RecipeCategory.BUILDING_BLOCKS,ModBlocks.ZYNITE_WALL,ModBlocks.ZYNITE_BLOCK);
+        createDoorRecipe(ModBlocks.ZYNITE_DOOR, Ingredient.ofItems(Moditems.ZYNITE))
+                .criterion(hasItem(Moditems.ZYNITE),conditionsFromItem(Moditems.ZYNITE))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ZYNITE_DOOR)));
+        createTrapdoorRecipe(ModBlocks.ZYNITE_TRAPDOOR, Ingredient.ofItems(Moditems.ZYNITE))
+                .criterion(hasItem(Moditems.ZYNITE),conditionsFromItem(Moditems.ZYNITE))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ZYNITE_TRAPDOOR)));
+        createStairsRecipe(ModBlocks.ZYNITE_STAIRS, Ingredient.ofItems(ModBlocks.ZYNITE_BLOCK))
+                .criterion(hasItem(Moditems.ZYNITE),conditionsFromItem(Moditems.ZYNITE))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ZYNITE_STAIRS)));
+        createFenceGateRecipe(ModBlocks.ZYNITE_FENCE_GATE, Ingredient.ofItems(Moditems.ZYNITE))
+                .criterion(hasItem(Moditems.ZYNITE),conditionsFromItem(Moditems.ZYNITE))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ZYNITE_FENCE_GATE)));
+        createFenceRecipe(ModBlocks.ZYNITE_FENCE, Ingredient.ofItems(Moditems.ZYNITE))
+                .criterion(hasItem(Moditems.ZYNITE),conditionsFromItem(Moditems.ZYNITE))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ZYNITE_FENCE)));
     }
 }

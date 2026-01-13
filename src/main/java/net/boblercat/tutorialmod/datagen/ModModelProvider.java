@@ -15,13 +15,24 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        BlockStateModelGenerator.BlockTexturePool zynitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZYNITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ZYNITE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZYNITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZYNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_ZYNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ZYNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_ZYNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUNDBLOCK);
+
+        zynitePool.stairs(ModBlocks.ZYNITE_STAIRS);
+        zynitePool.slab(ModBlocks.ZYNITE_SLAB);
+        zynitePool.button(ModBlocks.ZYNITE_BUTTON);
+        zynitePool.fence(ModBlocks.ZYNITE_FENCE);
+        zynitePool.fenceGate(ModBlocks.ZYNITE_FENCE_GATE);
+        zynitePool.wall(ModBlocks.ZYNITE_WALL);
+        zynitePool.pressurePlate(ModBlocks.ZYNITE_PRESSURE_PLATE);
+
+        blockStateModelGenerator.registerDoor((ModBlocks.ZYNITE_DOOR));
+        blockStateModelGenerator.registerTrapdoor((ModBlocks.ZYNITE_TRAPDOOR));
     }
 
     @Override
@@ -36,6 +47,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Moditems.RANDOM_ORB, Models.GENERATED);
         itemModelGenerator.register(Moditems.UNSTABLE_ORB, Models.GENERATED);
         itemModelGenerator.register(Moditems.PURE_ZYNITE, Models.GENERATED);
+        itemModelGenerator.register(Moditems.WITHERING_SHANK, Models.GENERATED);
 
     }
 }

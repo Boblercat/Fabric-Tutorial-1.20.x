@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOUNDBLOCK);
                         entries.add(Moditems.TOMATO);
                         entries.add(Moditems.COOLER_COAL);
+                        entries.add(Moditems.INDEX_ORB);
 
 
                     }).build());

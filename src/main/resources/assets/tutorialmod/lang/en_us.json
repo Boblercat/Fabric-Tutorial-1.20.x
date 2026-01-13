@@ -5,8 +5,14 @@
   "item.tutorialmod.random_orb": "The Orb of Randomness",
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.tomato": "Tomato",
-  "item.tutorialmod.cooler_coal": "cooler_coal",
+  "item.tutorialmod.cooler_coal": "Cooler Coal",
+  "item.tutorialmod.unstable_orb": "Unstable Orb",
+  "item.tutorialmod.index_orb": "Index Orb",
 
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
+  "tooltip.tutorialmod.unstable_orb.tooltip": "I wonder what I'll Get",
+
+  "item.tutorialmod.index_orb.tooltip": "Adds another Item to the Orb of Randomness loot pool permanently for all players.",
 
   "block.tutorialmod.zynite_block": "Block of Zynite",
   "block.tutorialmod.raw_zynite_block": "Block of Raw Zynite",

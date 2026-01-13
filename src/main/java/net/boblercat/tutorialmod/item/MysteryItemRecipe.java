@@ -16,13 +16,10 @@ import java.util.List;
 import java.util.Random;
 
 public class MysteryItemRecipe extends SpecialCraftingRecipe {
-    private static final List<Item> REWARD_POOL = new ArrayList<>();
+    public static final List<Item> REWARD_POOL = new ArrayList<>();
 
     static {
-        REWARD_POOL.add(Items.DIAMOND);
-        REWARD_POOL.add(Items.DIRT);
-        REWARD_POOL.add(Items.ENCHANTED_GOLDEN_APPLE);
-        REWARD_POOL.add(Moditems.ZYNITE);
+        REWARD_POOL.add(Moditems.ORB_OF_RANDOM);
     }
 
     public MysteryItemRecipe(Identifier id, CraftingRecipeCategory category) {
@@ -31,23 +28,42 @@ public class MysteryItemRecipe extends SpecialCraftingRecipe {
 
     @Override
     public boolean matches(RecipeInputInventory inventory, World world) {
-        // Loop through the grid
+        boolean foundOrb = false;
+
+        // Loop through every slot in the grid
         for (int i = 0; i < inventory.size(); i++) {
             ItemStack stack = inventory.getStack(i);
-            if (stack.getItem() == Moditems.ORB_OF_RANDOM) {
-                return true;
+
+            // If the slot is empty, ignore it and check the next one
+            if (stack.isEmpty()) {
+                continue;
             }
+
+            // If we find an item that is NOT the orb, the recipe fails immediately
+            if (stack.getItem() != Moditems.ORB_OF_RANDOM) {
+                return false;
+            }
+
+            // If we reach here, the item IS the orb.
+            // But if we already found an orb before (foundOrb is true),
+            // that means there are TWO orbs. The recipe should fail.
+            if (foundOrb) {
+                return false;
+            }
+
+            // Mark that we found the first valid orb
+            foundOrb = true;
         }
-        return false;
+
+        // Return true only if we found exactly one orb (and no junk items caused a false earlier)
+        return foundOrb;
     }
+
 
     @Override
     public ItemStack craft(RecipeInputInventory inventory, DynamicRegistryManager registryManager) {
-        // Pick a random item
-        Random random = new Random();
-        int randomIndex = random.nextInt(MysteryItemRecipe.REWARD_POOL.size());
-
-        return new ItemStack(MysteryItemRecipe.REWARD_POOL.get(randomIndex));
+        // Picks unstable Orb
+        return new ItemStack(Moditems.UNSTABLE_ORB);
     }
 
     @Override

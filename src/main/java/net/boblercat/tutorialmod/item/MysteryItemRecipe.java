@@ -19,7 +19,7 @@ public class MysteryItemRecipe extends SpecialCraftingRecipe {
     public static final List<Item> REWARD_POOL = new ArrayList<>();
 
     static {
-        REWARD_POOL.add(Moditems.ORB_OF_RANDOM);
+        REWARD_POOL.add(Moditems.RANDOM_ORB);
     }
 
     public MysteryItemRecipe(Identifier id, CraftingRecipeCategory category) {
@@ -40,7 +40,7 @@ public class MysteryItemRecipe extends SpecialCraftingRecipe {
             }
 
             // If we find an item that is NOT the orb, the recipe fails immediately
-            if (stack.getItem() != Moditems.ORB_OF_RANDOM) {
+            if (stack.getItem() != Moditems.RANDOM_ORB) {
                 return false;
             }
 

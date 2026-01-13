@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:zynite_ore",
+    "#minecraft:gold_ores",
+    "#minecraft:iron_ores",
+    "#minecraft:redstone_ores",
+    "#minecraft:diamond_ores"
+  ]
+}

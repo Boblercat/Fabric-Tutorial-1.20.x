@@ -45,7 +45,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapelessRecipe(exporter, Blocks.NOTE_BLOCK,ModBlocks.SOUNDBLOCK,"redstone",1);
         ComplexRecipeJsonBuilder.create(ModRecipes.MYSTERY_RECIPE_SERIALIZER)
                 .offerTo(exporter,"orb_recipe");
-        ComplexRecipeJsonBuilder.create(ModRecipes.MYSTERY_RECIPE_SERIALIZER)
+        ComplexRecipeJsonBuilder.create(ModRecipes.INDEX_RECIPE_SERIALIZER)
                 .offerTo(exporter,"index_recipe");
     }
 }

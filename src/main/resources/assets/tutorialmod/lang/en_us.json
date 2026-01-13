@@ -12,7 +12,7 @@
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.unstable_orb.tooltip": "I wonder what I'll get?",
 
-  "item.tutorialmod.index_orb.tooltip": "Adds another Item to the Orb of Randomness loot pool permanently for all players.",
+  "item.tutorialmod.index_orb.tooltip": "Adds another Item to the Orb of Randomness loot pool for this session for all players.",
 
   "block.tutorialmod.zynite_block": "Block of Zynite",
   "block.tutorialmod.raw_zynite_block": "Block of Raw Zynite",

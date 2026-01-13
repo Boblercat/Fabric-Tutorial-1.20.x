@@ -20,6 +20,7 @@ public class TutorialMod implements ModInitializer {
 		Moditems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModRecipes.registerRecipes();
+		//net.boblercat.tutorialmod.utill.RewardDataManager.load();
 
 		FuelRegistry.INSTANCE.add(Moditems.COOLER_COAL,2800);
 

@@ -35,6 +35,7 @@ public class Moditems {
         @Override
         public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
             tooltip.add(Text.translatable("item.tutorialmod.index_orb.tooltip"));
+            tooltip.add(Text.literal("(Per Session: resets once you leave and rejoin)"));
             tooltip.add(Text.literal("(Hint: Put the Index Orb and another item in the Crafting Table)"));
 
         }

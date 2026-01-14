@@ -22,7 +22,12 @@ public class Moditems {
     public static final Item ZYNITE = registerItem("zynite",new Item(new FabricItemSettings()));
     public static final Item RAW_ZYNITE = registerItem("raw_zynite",new Item(new FabricItemSettings()));
     public static final Item PURE_ZYNITE = registerItem("pure_zynite",new Item(new FabricItemSettings()));
-    public static final Item RANDOM_ORB = registerItem("random_orb",new Item(new FabricItemSettings()));
+    public static final Item RANDOM_ORB = registerItem("random_orb",new Item(new FabricItemSettings()){
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.literal("Craft a random item from the random orb loot pool"));
+        }
+    });
     public static final Item TOMATO = registerItem("tomato",new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
     public static final Item COOLER_COAL = registerItem("cooler_coal",new Item(new FabricItemSettings()));
 
@@ -51,11 +56,21 @@ public class Moditems {
 
     public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
             new AliasedBlockItem(ModBlocks.TOMATO_CROP,new FabricItemSettings()));
-    public static final Item LORE_SCROLL = registerItem("lore_scroll",new LoreScrollItem(new FabricItemSettings().maxCount(1)));
+    public static final Item LORE_SCROLL = registerItem("lore_scroll",new LoreScrollItem(new FabricItemSettings().maxCount(1)){
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.literal("Access a random lore entry that someone wrote with the /addlore command"));
+        }
+    });
     public static final Item UNSTABLE_ORB = registerItem("unstable_orb",new UnstableOrbItem(new FabricItemSettings()));
     public static final Item WITHERING_SHANK = registerItem("withering_shank",new WitheringShankItem(new FabricItemSettings().maxDamage(1)));
     public static final Item EFFECT_BANK = registerItem("effect_bank",
-            new EffectBankItem(new FabricItemSettings().maxCount(1)));
+            new EffectBankItem(new FabricItemSettings().maxCount(1)){
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("Store up to 3 Effects that anyone with the bank can release"));
+                }
+            });
 
     public static final Item INDEX_ORB = registerItem("index_orb",new Item(new FabricItemSettings().maxCount(1)){
         @Override

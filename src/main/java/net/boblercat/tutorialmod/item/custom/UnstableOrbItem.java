@@ -1,6 +1,6 @@
 package net.boblercat.tutorialmod.item.custom;
 
-import net.boblercat.tutorialmod.item.MysteryItemRecipe;
+import net.boblercat.tutorialmod.recipes.MysteryItemRecipe;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;

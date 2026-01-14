@@ -1,4 +1,4 @@
-package net.boblercat.tutorialmod.item;
+package net.boblercat.tutorialmod.recipes;
 
 import net.boblercat.tutorialmod.TutorialMod;
 import net.minecraft.recipe.RecipeSerializer;

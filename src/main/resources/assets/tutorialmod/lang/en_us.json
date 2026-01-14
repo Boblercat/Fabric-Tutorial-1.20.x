@@ -10,6 +10,17 @@
   "item.tutorialmod.index_orb": "Index Orb",
   "item.tutorialmod.withering_shank": "Withering Shank",
 
+  "item.tutorialmod.zynite_sword": "Zynite Sword",
+  "item.tutorialmod.zynite_pickaxe": "Zynite Pickaxe",
+  "item.tutorialmod.zynite_axe": "Zynite Axe",
+  "item.tutorialmod.zynite_shovel": "Zynite Shovel",
+  "item.tutorialmod.zynite_hoe": "Zynite Hoe",
+
+  "item.tutorialmod.zynite_helmet": "Zynite Helmet",
+  "item.tutorialmod.zynite_chestplate": "Zynite Chestplate",
+  "item.tutorialmod.zynite_leggings": "Zynite Leggings",
+  "item.tutorialmod.zynite_boots": "Zynite Boots",
+
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.unstable_orb.tooltip": "I wonder what I'll get?",
 

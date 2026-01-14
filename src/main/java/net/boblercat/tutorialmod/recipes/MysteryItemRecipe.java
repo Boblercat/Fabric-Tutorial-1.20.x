@@ -1,9 +1,9 @@
-package net.boblercat.tutorialmod.item;
+package net.boblercat.tutorialmod.recipes;
 
+import net.boblercat.tutorialmod.item.Moditems;
 import net.minecraft.inventory.RecipeInputInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.CraftingRecipeCategory;
@@ -13,7 +13,6 @@ import net.minecraft.world.World;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class MysteryItemRecipe extends SpecialCraftingRecipe {
     public static final List<Item> REWARD_POOL = new ArrayList<>();

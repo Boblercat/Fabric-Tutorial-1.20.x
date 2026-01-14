@@ -55,6 +55,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_ZYNITE_ORE)
                 .add(ModBlocks.RAW_ZYNITE_BLOCK)
                 ;
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,new Identifier("fabric","needs_tool_level_5")));
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.ZYNITE_FENCE)
         ;

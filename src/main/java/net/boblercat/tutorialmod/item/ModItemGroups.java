@@ -39,6 +39,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ZYNITE_FENCE_GATE);
                         entries.add(ModBlocks.ZYNITE_DOOR);
                         entries.add(ModBlocks.ZYNITE_TRAPDOOR);
+                        entries.add(Moditems.ZYNITE_SWORD);
+                        entries.add(Moditems.ZYNITE_PICKAXE);
+                        entries.add(Moditems.ZYNITE_AXE);
+                        entries.add(Moditems.ZYNITE_SHOVEL);
+                        entries.add(Moditems.ZYNITE_HOE);
+                        entries.add(Moditems.ZYNITE_HELMET);
+                        entries.add(Moditems.ZYNITE_CHESTPLATE);
+                        entries.add(Moditems.ZYNITE_LEGGINGS);
+                        entries.add(Moditems.ZYNITE_BOOTS);
 
 
                     }).build());

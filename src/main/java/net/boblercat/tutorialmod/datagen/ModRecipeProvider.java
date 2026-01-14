@@ -1,11 +1,10 @@
 package net.boblercat.tutorialmod.datagen;
 
 import net.boblercat.tutorialmod.block.ModBlocks;
-import net.boblercat.tutorialmod.item.ModRecipes;
+import net.boblercat.tutorialmod.recipes.ModRecipes;
 import net.boblercat.tutorialmod.item.Moditems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.ComplexRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;

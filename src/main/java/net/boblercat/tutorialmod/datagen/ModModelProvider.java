@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -47,7 +48,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Moditems.RANDOM_ORB, Models.GENERATED);
         itemModelGenerator.register(Moditems.UNSTABLE_ORB, Models.GENERATED);
         itemModelGenerator.register(Moditems.PURE_ZYNITE, Models.GENERATED);
-        itemModelGenerator.register(Moditems.WITHERING_SHANK, Models.GENERATED);
+
+        itemModelGenerator.register(Moditems.ZYNITE_SWORD,Models.HANDHELD);
+        itemModelGenerator.register(Moditems.ZYNITE_HOE,Models.HANDHELD);
+        itemModelGenerator.register(Moditems.ZYNITE_PICKAXE,Models.HANDHELD);
+        itemModelGenerator.register(Moditems.ZYNITE_AXE,Models.HANDHELD);
+        itemModelGenerator.register(Moditems.ZYNITE_SHOVEL,Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) Moditems.ZYNITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) Moditems.ZYNITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) Moditems.ZYNITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) Moditems.ZYNITE_BOOTS));
 
     }
 }

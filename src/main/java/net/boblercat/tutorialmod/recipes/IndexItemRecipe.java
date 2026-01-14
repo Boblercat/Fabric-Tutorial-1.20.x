@@ -1,5 +1,6 @@
-package net.boblercat.tutorialmod.item;
+package net.boblercat.tutorialmod.recipes;
 
+import net.boblercat.tutorialmod.item.Moditems;
 import net.minecraft.inventory.RecipeInputInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

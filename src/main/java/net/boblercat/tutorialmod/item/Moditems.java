@@ -1,7 +1,9 @@
 package net.boblercat.tutorialmod.item;
 
 import net.boblercat.tutorialmod.TutorialMod;
+import net.boblercat.tutorialmod.block.ModBlocks;
 import net.boblercat.tutorialmod.item.custom.MetalDetectorItem;
+import net.boblercat.tutorialmod.item.custom.ModArmorItem;
 import net.boblercat.tutorialmod.item.custom.UnstableOrbItem;
 import net.boblercat.tutorialmod.item.custom.WitheringShankItem;
 import net.fabricmc.fabric.api.client.networking.v1.C2SPlayChannelEvents;
@@ -39,7 +41,7 @@ public class Moditems {
             ,new HoeItem(ModToolMaterial.ZYNITE,-3,0, new FabricItemSettings()));
 
     public static final Item ZYNITE_HELMET = registerItem("zynite_helmet"
-            ,new ArmorItem(ModArmorMaterials.ZYNITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            ,new ModArmorItem(ModArmorMaterials.ZYNITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item ZYNITE_CHESTPLATE = registerItem("zynite_chestplate"
             ,new ArmorItem(ModArmorMaterials.ZYNITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item ZYNITE_LEGGINGS = registerItem("zynite_leggings"
@@ -49,6 +51,9 @@ public class Moditems {
 
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROP,new FabricItemSettings()));
 
     public static final Item UNSTABLE_ORB = registerItem("unstable_orb",new UnstableOrbItem(new FabricItemSettings()));
     public static final Item WITHERING_SHANK = registerItem("withering_shank",new WitheringShankItem(new FabricItemSettings().maxDamage(1)));

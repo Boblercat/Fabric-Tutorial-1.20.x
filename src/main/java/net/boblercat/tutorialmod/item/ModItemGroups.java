@@ -48,6 +48,7 @@ public class ModItemGroups {
                         entries.add(Moditems.ZYNITE_CHESTPLATE);
                         entries.add(Moditems.ZYNITE_LEGGINGS);
                         entries.add(Moditems.ZYNITE_BOOTS);
+                        entries.add(Moditems.TOMATO_SEEDS);
 
 
                     }).build());

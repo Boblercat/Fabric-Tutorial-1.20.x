@@ -5,6 +5,7 @@ import net.boblercat.tutorialmod.effects.ModStatusEffects;
 import net.boblercat.tutorialmod.item.ModItemGroups;
 import net.boblercat.tutorialmod.recipes.ModRecipes;
 import net.boblercat.tutorialmod.item.Moditems;
+import net.boblercat.tutorialmod.utill.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -22,6 +23,7 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModRecipes.registerRecipes();
 		ModStatusEffects.registerModEffects();
+		ModLootTableModifiers.modifyLootTables();
 		//net.boblercat.tutorialmod.utill.RewardDataManager.load();
 
 		FuelRegistry.INSTANCE.add(Moditems.COOLER_COAL,2800);

@@ -21,6 +21,11 @@
   "item.tutorialmod.zynite_leggings": "Zynite Leggings",
   "item.tutorialmod.zynite_boots": "Zynite Boots",
 
+  "item.tutorialmod.tomato_seeds": "Tomato Seeds",
+
+  "effect.tutorialmod.decay": "Decay",
+  "effect.tutorialmod.antiheal": "Anti-Heal",
+
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds Valuables Underground!",
   "tooltip.tutorialmod.unstable_orb.tooltip": "I wonder what I'll get?",
 

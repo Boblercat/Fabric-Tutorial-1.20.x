@@ -1,6 +1,7 @@
 package net.boblercat.tutorialmod.datagen;
 
 import net.boblercat.tutorialmod.block.ModBlocks;
+import net.boblercat.tutorialmod.block.custom.TomatoCropBlock;
 import net.boblercat.tutorialmod.item.Moditems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -34,6 +35,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor((ModBlocks.ZYNITE_DOOR));
         blockStateModelGenerator.registerTrapdoor((ModBlocks.ZYNITE_TRAPDOOR));
+
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE,0,1,2,3,4,5);
     }
 
     @Override

@@ -7,8 +7,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModStatusEffects {
-    public static final StatusEffect ANTIHEAL = new AntiHealEffect();
-    public static final StatusEffect DECAY = new AntiHealEffect();
+    public static final StatusEffect ANTIHEAL = registerEffect("antiheal",new AntiHealEffect());
+    public static final StatusEffect DECAY = registerEffect("decay",new DecayEffect());
 
 
     private static StatusEffect registerEffect(String name, StatusEffect effect) {

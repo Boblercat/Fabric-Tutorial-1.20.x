@@ -2,6 +2,7 @@ package net.boblercat.tutorialmod.block;
 
 import net.boblercat.tutorialmod.TutorialMod;
 import net.boblercat.tutorialmod.block.custom.SoundBlock;
+import net.boblercat.tutorialmod.block.custom.TomatoCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -51,7 +52,8 @@ public class ModBlocks {
     public static final Block ZYNITE_TRAPDOOR = registerBlock("zynite_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(),BlockSetType.IRON));
 
-
+    public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,"tomato_crop"),
+            new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     private static Block registerBlock(String name, Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID, name), block);

@@ -1,6 +1,7 @@
 package net.boblercat.tutorialmod.datagen;
 
 import net.boblercat.tutorialmod.block.ModBlocks;
+import net.boblercat.tutorialmod.block.custom.TomatoCropBlock;
 import net.boblercat.tutorialmod.item.Moditems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -10,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -17,6 +19,7 @@ import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -44,6 +47,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.ZYNITE_DOOR,doorDrops(ModBlocks.ZYNITE_DOOR));
         addDrop(ModBlocks.ZYNITE_SLAB,slabDrops(ModBlocks.ZYNITE_SLAB));
+
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(TomatoCropBlock.AGE,5));
+        addDrop(ModBlocks.TOMATO_CROP,cropDrops(ModBlocks.TOMATO_CROP,Moditems.TOMATO,Moditems.TOMATO_SEEDS,builder));
     }
 
     public LootTable.Builder advancedOreDrops(Block drop, Item item, float min, float max) {

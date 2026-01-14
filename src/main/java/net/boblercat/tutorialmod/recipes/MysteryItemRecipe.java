@@ -21,8 +21,8 @@ public class MysteryItemRecipe extends SpecialCraftingRecipe {
         REWARD_POOL.add(Moditems.RANDOM_ORB);
     }
 
-    public MysteryItemRecipe(Identifier id, CraftingRecipeCategory category) {
-        super(id, category);
+    public MysteryItemRecipe(CraftingRecipeCategory category) {
+        super(category);
     }
 
     @Override

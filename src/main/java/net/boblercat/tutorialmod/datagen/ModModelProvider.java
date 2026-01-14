@@ -51,6 +51,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Moditems.RANDOM_ORB, Models.GENERATED);
         itemModelGenerator.register(Moditems.UNSTABLE_ORB, Models.GENERATED);
         itemModelGenerator.register(Moditems.PURE_ZYNITE, Models.GENERATED);
+        itemModelGenerator.register(Moditems.LORE_SCROLL, Models.GENERATED);
+        itemModelGenerator.register(Moditems.EFFECT_BANK, Models.GENERATED);
 
         itemModelGenerator.register(Moditems.ZYNITE_SWORD,Models.HANDHELD);
         itemModelGenerator.register(Moditems.ZYNITE_HOE,Models.HANDHELD);
@@ -62,6 +64,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) Moditems.ZYNITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) Moditems.ZYNITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) Moditems.ZYNITE_BOOTS));
+
 
     }
 }

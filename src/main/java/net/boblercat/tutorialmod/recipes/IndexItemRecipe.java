@@ -14,8 +14,8 @@ import net.minecraft.world.World;
 public class IndexItemRecipe extends SpecialCraftingRecipe {
 
 
-    public IndexItemRecipe(Identifier id, CraftingRecipeCategory category) {
-        super(id, category);
+    public IndexItemRecipe(CraftingRecipeCategory category) {
+        super(category);
     }
 
     @Override

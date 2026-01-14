@@ -3,6 +3,7 @@ package net.boblercat.tutorialmod.block;
 import net.boblercat.tutorialmod.TutorialMod;
 import net.boblercat.tutorialmod.block.custom.SoundBlock;
 import net.boblercat.tutorialmod.block.custom.TomatoCropBlock;
+import net.boblercat.tutorialmod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -28,7 +29,7 @@ public class ModBlocks {
     public static final Block END_STONE_ZYNITE_ORE = registerBlock("end_stone_zynite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(25.0f), UniformIntProvider.create(6,9)));
     public static final Block SOUNDBLOCK = registerBlock("soundblock",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(ModSounds.SOUND_BLOCK_SOUNDS)));
 
     public static final Block ZYNITE_STAIRS = registerBlock("zynite_stairs",
             new StairsBlock(ModBlocks.ZYNITE_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));

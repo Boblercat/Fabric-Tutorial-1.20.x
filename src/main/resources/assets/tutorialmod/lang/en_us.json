@@ -49,6 +49,8 @@
   "block.tutorialmod.zynite_fence_gate": "Zynite Fence Gate",
   "block.tutorialmod.zynite_wall": "Zynite Wall",
 
+  "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",
+
 
   "itemgroup.zynite": "Lowkirkenuenly items"
 }

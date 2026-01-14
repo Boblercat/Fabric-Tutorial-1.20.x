@@ -6,51 +6,70 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class EffectMemory {
-    // RUBRIC: Standard Array (Fixed size of 3)
+    // Fixed size of 3
     private final StatusEffectInstance[] storedEffects = new StatusEffectInstance[3];
 
-    // Method to ABSORB effects from the player
-    public void absorbEffects(LivingEntity player) {
+
+    public boolean isFull() {
+        int i = 0;
+        // WHILE LOOP to check for empty spots
+        while (i < storedEffects.length) {
+            if (storedEffects[i] == null) {
+                return false; // Found an empty spot, so it's NOT full
+            }
+            i++;
+        }
+        return true; // Checked all slots and found no nulls
+    }
+
+
+    public boolean absorbEffects(LivingEntity player) {
+        // 1. Check if full immediately
+        if (isFull()) {
+            return false;
+        }
+
         Collection<StatusEffectInstance> currentEffects = player.getStatusEffects();
         Iterator<StatusEffectInstance> iterator = currentEffects.iterator();
 
-        int i = 0;
 
-        // RUBRIC: While Loop
-        // Fills the array until it's full or we run out of effects
-        while (i < storedEffects.length && iterator.hasNext()) {
+        while (iterator.hasNext()) {
             StatusEffectInstance effect = iterator.next();
 
-            // Store a copy of the effect
-            storedEffects[i] = new StatusEffectInstance(effect);
 
-            i++;
+            int i = 0;
+            boolean stored = false;
+            while (i < storedEffects.length) {
+                if (storedEffects[i] == null) {
+                    storedEffects[i] = new StatusEffectInstance(effect);
+                    stored = true;
+                    break;
+                }
+                i++;
+            }
+
+            if (!stored) {
+                break;
+            }
         }
 
-        // Remove them from the player after storing (optional, creates "Steal" effect)
         player.clearStatusEffects();
+        return true;
     }
 
-    // Method to RELEASE effects back to the player
     public void releaseEffects(LivingEntity player) {
         int i = 0;
-
-        // RUBRIC: Another While Loop (iterating the array)
         while (i < storedEffects.length) {
-            // Check if this slot has an effect
             if (storedEffects[i] != null) {
-                // Apply it to the player
                 player.addStatusEffect(new StatusEffectInstance(storedEffects[i]));
-
-                // Clear the slot (set to null) so it can be used again
                 storedEffects[i] = null;
             }
             i++;
         }
     }
 
-    // Helper to check if empty (for chat messages)
     public boolean isEmpty() {
-        return storedEffects[0] == null;
+        // Check if index 0 is empty (simple check)
+        return storedEffects[0] == null && storedEffects[1] == null && storedEffects[2] == null;
     }
 }

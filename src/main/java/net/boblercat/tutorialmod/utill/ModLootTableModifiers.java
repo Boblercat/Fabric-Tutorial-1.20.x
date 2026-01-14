@@ -46,6 +46,16 @@ public class ModLootTableModifiers {
 
                 builder.pool(poolBuilder.build());
             }
+
+            if(ZOMBIE_ID.equals(identifier)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .with(ItemEntry.builder(Moditems.TOMATO_SEEDS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+
+                builder.pool(poolBuilder.build());
+                }
         } );
 
     }

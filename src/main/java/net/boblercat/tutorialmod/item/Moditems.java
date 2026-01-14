@@ -47,7 +47,7 @@ public class Moditems {
             ,new ArmorItem(ModArmorMaterials.ZYNITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
-            new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
 
     public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
             new AliasedBlockItem(ModBlocks.TOMATO_CROP,new FabricItemSettings()));

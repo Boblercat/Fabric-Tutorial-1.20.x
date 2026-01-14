@@ -16,10 +16,10 @@ public class AddLoreCommand {
                             String input = StringArgumentType.getString(context, "text");
                             String playerName = context.getSource().getName();
 
-                            // RUBRIC: Instantiating your Custom Object
+
                             LoreEntry newEntry = new LoreEntry(input, playerName);
 
-                            // Passing the object to the manager
+
                             LoreManager.addLore(newEntry);
 
                             context.getSource().sendFeedback(() -> Text.of("Lore added!"), false);

@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Random;
 
 public class LoreManager {
-    // RUBRIC: ArrayList using YOUR CUSTOM OBJECT
     private static final List<LoreEntry> LORE_LIST = new ArrayList<>();
     private static final File SAVE_FILE = FabricLoader.getInstance().getConfigDir().resolve("mod_lore.txt").toFile();
 
@@ -31,7 +30,6 @@ public class LoreManager {
         }
     }
 
-    // RUBRIC: Using your object as a parameter
     public static void addLore(LoreEntry entry) {
         LORE_LIST.add(entry);
 

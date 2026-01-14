@@ -11,7 +11,6 @@ import net.minecraft.world.World;
 
 public class EffectBankItem extends Item {
 
-    // OOC: Instantiating your custom object
     private static final EffectMemory MEMORY = new EffectMemory();
 
     public EffectBankItem(Settings settings) {
@@ -22,25 +21,37 @@ public class EffectBankItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!world.isClient) {
 
-            // ACTION 1: SNEAKING = STORE (Absorb)
+
             if (user.isSneaking()) {
+
                 if (user.getStatusEffects().isEmpty()) {
                     user.sendMessage(Text.of("§cYou have no effects to store!"), true);
                 } else {
-                    MEMORY.absorbEffects(user);
-                    user.sendMessage(Text.of("§aEffects sucked into the bank!"), true);
+
+                    boolean success = MEMORY.absorbEffects(user);
+
+                    if (success) {
+                        user.sendMessage(Text.of("§aEffects sucked into the bank!"), true);
+                    } else {
+
+                        user.sendMessage(Text.of("§cThe Bank is full! Release effects first."), true);
+                    }
                 }
-            }
-            // ACTION 2: STANDING = RELEASE (Apply)
-            else {
+            }else {
+
+
+                // Check if the bank is empty first
                 if (MEMORY.isEmpty()) {
                     user.sendMessage(Text.of("§cThe bank is empty."), true);
                 } else {
+
                     MEMORY.releaseEffects(user);
                     user.sendMessage(Text.of("§eEffects restored!"), true);
                 }
             }
         }
+
         return TypedActionResult.success(user.getStackInHand(hand));
-    }
+        }
 }
+

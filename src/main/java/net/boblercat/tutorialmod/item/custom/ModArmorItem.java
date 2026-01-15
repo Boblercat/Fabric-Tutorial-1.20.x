@@ -23,7 +23,7 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterials.ZYNITE, List.of(
                             new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 2,
                                     false, false, true),
-                            new StatusEffectInstance(ModStatusEffects.ANTIHEAL, 200, 0,
+                            new StatusEffectInstance(ModStatusEffects.ANTIHEAL, 400, 0,
                                     false, false, true)
                     ))
                     .build();

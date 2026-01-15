@@ -1,5 +1,6 @@
 package net.boblercat.tutorialmod.block.custom;
 
+import net.boblercat.tutorialmod.item.ModItemGroups;
 import net.boblercat.tutorialmod.item.Moditems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

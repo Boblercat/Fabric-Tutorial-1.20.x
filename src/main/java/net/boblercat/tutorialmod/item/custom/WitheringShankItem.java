@@ -26,9 +26,9 @@ public class WitheringShankItem extends Item {
     private void Withering(LivingEntity target) {
         if(target.hasStatusEffect(StatusEffects.WITHER)){
             StatusEffectInstance witherEffect = target.getStatusEffect(StatusEffects.WITHER);
-            StatusEffectInstance decayEffect = target.getStatusEffect(ModStatusEffects.DECAY);
             int witherLevel = witherEffect.getAmplifier();
             if(target.hasStatusEffect(ModStatusEffects.DECAY)){
+                StatusEffectInstance decayEffect = target.getStatusEffect(ModStatusEffects.DECAY);
                 int decayLevel = decayEffect.getAmplifier();
                 target.addStatusEffect(new StatusEffectInstance(ModStatusEffects.DECAY,200,decayLevel+1));
             }

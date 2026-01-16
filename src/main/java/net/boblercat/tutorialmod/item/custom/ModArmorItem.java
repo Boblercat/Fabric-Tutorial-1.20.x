@@ -17,7 +17,6 @@ import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
 
-    // 1. CHANGED: The Value is now List<StatusEffectInstance>, not just StatusEffectInstance
     private static final Map<ArmorMaterial, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>())
                     .put(ModArmorMaterials.ZYNITE, List.of(
@@ -45,7 +44,7 @@ public class ModArmorItem extends ArmorItem {
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, List<StatusEffectInstance>> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
-            List<StatusEffectInstance> mapStatusEffects = entry.getValue(); // Get the LIST
+            List<StatusEffectInstance> mapStatusEffects = entry.getValue();
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
                 for(StatusEffectInstance effect : mapStatusEffects) {
@@ -61,6 +60,7 @@ public class ModArmorItem extends ArmorItem {
 
         if (hasCorrectArmorOn(mapArmorMaterial, player)) {
             if (!hasPlayerEffect || (currentEffect != null && currentEffect.getAmplifier() < mapStatusEffect.getAmplifier())) {
+                player.addStatusEffect(new StatusEffectInstance(mapStatusEffect));
             }
         }
     }

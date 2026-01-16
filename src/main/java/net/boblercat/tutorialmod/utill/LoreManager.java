@@ -17,8 +17,6 @@ public class LoreManager {
         try (BufferedReader reader = new BufferedReader(new FileReader(SAVE_FILE))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                // Parse the line back into an Object
-                // Format assumed: Author::Text
                 String[] parts = line.split("::", 2);
                 if (parts.length == 2) {
                     // Create the object from file data

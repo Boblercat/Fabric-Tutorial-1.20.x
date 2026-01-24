@@ -192,6 +192,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input(Items.SUGAR)
                         .criterion(hasItem(Items.COAL),conditionsFromItem(Items.COAL))
                         .criterion(hasItem(Items.SUGAR),conditionsFromItem(Items.SUGAR)).offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Moditems.LOTTERY_TICKET,1)
+                .input(Items.FEATHER)
+                .input(Items.PAPER)
+                .input(Items.AMETHYST_SHARD)
+                .input(Moditems.TOMATO)
+                .input(Items.GOLD_NUGGET)
+                .input(Items.BLACK_DYE)
+                .criterion(hasItem(Moditems.TOMATO),conditionsFromItem(Moditems.TOMATO))
+                .criterion(hasItem(Items.PAPER),conditionsFromItem(Items.PAPER))
+                .criterion(hasItem(Items.FEATHER),conditionsFromItem(Items.FEATHER))
+                .criterion(hasItem(Items.AMETHYST_SHARD),conditionsFromItem(Items.AMETHYST_SHARD))
+                .criterion(hasItem(Items.GOLD_NUGGET),conditionsFromItem(Items.GOLD_NUGGET)).offerTo(exporter);
 
         offerShapelessRecipe(exporter, Blocks.NOTE_BLOCK,ModBlocks.SOUNDBLOCK,"redstone",1);
         offerShapelessRecipe(exporter, ModBlocks.SOUNDBLOCK,Blocks.NOTE_BLOCK,"redstone",1);

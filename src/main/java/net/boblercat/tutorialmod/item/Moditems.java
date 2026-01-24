@@ -63,6 +63,14 @@ public class Moditems {
         }
     });
     public static final Item UNSTABLE_ORB = registerItem("unstable_orb",new UnstableOrbItem(new FabricItemSettings()));
+    public static final Item LOTTERY_TICKET = registerItem("lottery_ticket",new LotteryTicketItem(new FabricItemSettings().maxCount(64)){
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.literal("Try your luck and see if you can hit a JACKPOT"));
+            tooltip.add(Text.literal("Chance increase the more you have in a stack"));
+            tooltip.add(Text.literal("Succesfuly hitting JACKPOT will have a chance of giving you a full stack back"));
+        }
+    });
     public static final Item WITHERING_SHANK = registerItem("withering_shank",new WitheringShankItem(new FabricItemSettings().maxDamage(1)));
     public static final Item EFFECT_BANK = registerItem("effect_bank",
             new EffectBankItem(new FabricItemSettings().maxCount(1)){

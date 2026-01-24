@@ -53,6 +53,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Moditems.PURE_ZYNITE, Models.GENERATED);
         itemModelGenerator.register(Moditems.LORE_SCROLL, Models.GENERATED);
         itemModelGenerator.register(Moditems.EFFECT_BANK, Models.GENERATED);
+        itemModelGenerator.register(Moditems.LOTTERY_TICKET,Models.GENERATED);
 
         itemModelGenerator.register(Moditems.ZYNITE_SWORD,Models.HANDHELD);
         itemModelGenerator.register(Moditems.ZYNITE_HOE,Models.HANDHELD);

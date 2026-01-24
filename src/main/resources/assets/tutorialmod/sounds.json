@@ -5,6 +5,12 @@
       "tutorialmod:metal_detector_found_ore"
     ]
   },
+    "jackpot_music": {
+    "subtitle": "sounds.jackpot_music",
+    "sounds": [
+      "tutorialmod:jackpot_music"
+    ]
+  },
   "sound_block_break": {
     "subtitle": "tutorialmod.sound_block_break",
     "sounds": [

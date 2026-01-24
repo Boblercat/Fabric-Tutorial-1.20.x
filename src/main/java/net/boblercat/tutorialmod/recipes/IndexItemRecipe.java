@@ -27,17 +27,16 @@ public class IndexItemRecipe extends SpecialCraftingRecipe {
             ItemStack stack = inventory.getStack(i);
             if (stack.isEmpty()) continue;
 
-            // CHECK 1: Is this your specific fixed item?
-            if (stack.getItem() == Moditems.INDEX_ORB) { // <--- REPLACE THIS
-                if (foundFixedItem) return false; // Fail if we found two Orbs
+
+            if (stack.getItem() == Moditems.INDEX_ORB) {
+                if (foundFixedItem) return false;
                 foundFixedItem = true;
             }
-            // CHECK 2: If it's not the fixed item, it must be the Dynamic one
-            else {
-                if (foundDynamicItem) return false; // Fail if we found two random items
 
-                // OPTIONAL: Add a check here if you only want it to work on Swords, Tools, etc.
-                // if (!stack.getItem().isDamageable()) return false;
+            else {
+                if (foundDynamicItem) return false;
+
+
 
                 foundDynamicItem = true;
             }

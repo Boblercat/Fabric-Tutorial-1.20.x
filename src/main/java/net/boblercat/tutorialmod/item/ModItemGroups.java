@@ -51,6 +51,7 @@ public class ModItemGroups {
                         entries.add(Moditems.TOMATO_SEEDS);
                         entries.add(Moditems.LORE_SCROLL);
                         entries.add(Moditems.EFFECT_BANK);
+                        entries.add(Moditems.LOTTERY_TICKET);
 
 
                     }).build());

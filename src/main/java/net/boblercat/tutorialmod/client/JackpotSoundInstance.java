@@ -6,21 +6,23 @@ import net.minecraft.client.sound.MovingSoundInstance;
 import net.minecraft.client.sound.SoundInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 
 public class JackpotSoundInstance extends MovingSoundInstance {
     private final PlayerEntity owner;
 
-    public JackpotSoundInstance(PlayerEntity owner){
-        super(ModSounds.JACKPOT_MUSIC, SoundCategory.MUSIC, SoundInstance.createRandom());
+    public JackpotSoundInstance(PlayerEntity owner, SoundEvent sound){
+        super(sound, SoundCategory.MUSIC, SoundInstance.createRandom());
         this.owner = owner;
         this.repeat = false;
         this.repeatDelay = 0;
-        this.volume = 1.0f;
+        this.volume = 5.0f;
         this.pitch = 1.0f;
 
         this.x = owner.getX();
         this.y = owner.getY();
         this.z = owner.getZ();
+        this.attenuationType = AttenuationType.LINEAR;
     }
 
     @Override

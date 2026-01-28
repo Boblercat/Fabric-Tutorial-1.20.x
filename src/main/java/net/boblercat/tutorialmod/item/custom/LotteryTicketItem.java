@@ -48,14 +48,26 @@ public class LotteryTicketItem extends Item {
             if (chance == 0){
                 user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.JACKPOT,5020,0));
                 if (world instanceof ServerWorld serverWorld) {
+                    // 1. Randomly pick a song
+                    SoundEvent selectedSound;
+                    if (world.random.nextBoolean()) {
+                        selectedSound = ModSounds.JACKPOT_MUSIC; // Song 1
+                    } else {
+                        selectedSound = ModSounds.JACKPOT_MUSIC_2; // Song 2 (Make sure you registered this!)
+                    }
 
+                    // 2. Create Packet
                     PacketByteBuf buf = PacketByteBufs.create();
-                    buf.writeInt(user.getId()); // Send the winner's Entity ID
+                    buf.writeInt(user.getId());
 
-                    // Send to every player on the server
+                    // 3. Write the ID of the chosen sound so the client knows what to play
+                    buf.writeIdentifier(selectedSound.getId());
+
+                    // 4. Send to everyone
                     for (ServerPlayerEntity player : serverWorld.getPlayers()) {
                         ServerPlayNetworking.send(player, TutorialMod.JACKPOT_PACKET_ID, buf);
                     }
+
                 }
                 user.sendMessage(Text.of("§aSUCCESS! JACKPOT!!!"),true);
                 if (count >1) {

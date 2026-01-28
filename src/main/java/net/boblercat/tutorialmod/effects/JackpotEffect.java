@@ -46,7 +46,7 @@ public class JackpotEffect extends StatusEffect {
             double y = entity.getY();
             double z = entity.getZ();
 
-            serverWorld.spawnParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y+1, z, 27, 0.35, 0.35, 0.35, 0.5);
+            serverWorld.spawnParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y+1, z, 15, 0.37, 0.37, 0.37, 0.5);
         }
 
         if(amplifier == 0){

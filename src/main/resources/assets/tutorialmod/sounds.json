@@ -11,6 +11,12 @@
       "tutorialmod:jackpot_music"
     ]
   },
+  "jackpot_music_2": {
+    "subtitle": "sounds.jackpot_music",
+    "sounds": [
+      "tutorialmod:jackpot_music_2"
+    ]
+  },
   "sound_block_break": {
     "subtitle": "tutorialmod.sound_block_break",
     "sounds": [

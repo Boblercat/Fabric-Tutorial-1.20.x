@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "S": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+  ],
+  "result": {
+    "item": "tutorialmod:index_orb"
+  },
+  "show_notification": true
+}

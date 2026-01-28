@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:zynite_block",
+    "tutorialmod:zynite_ore",
+    "tutorialmod:nether_zynite_ore",
+    "tutorialmod:end_stone_zynite_ore",
+    "tutorialmod:deepslate_zynite_ore",
+    "tutorialmod:raw_zynite_block"
+  ]
+}

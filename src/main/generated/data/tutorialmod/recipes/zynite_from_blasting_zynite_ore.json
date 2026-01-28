@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 110,
+  "experience": 0.9,
+  "group": "zynite",
+  "ingredient": {
+    "item": "tutorialmod:zynite_ore"
+  },
+  "result": "tutorialmod:zynite"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "*": {
+      "item": "tutorialmod:zynite"
+    },
+    "G": {
+      "item": "minecraft:netherite_axe"
+    },
+    "S": {
+      "item": "minecraft:smithing_table"
+    }
+  },
+  "pattern": [
+    "** ",
+    "*G ",
+    " S "
+  ],
+  "result": {
+    "item": "tutorialmod:zynite_axe"
+  },
+  "show_notification": true
+}

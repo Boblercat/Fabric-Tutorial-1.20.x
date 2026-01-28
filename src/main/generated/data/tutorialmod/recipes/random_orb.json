@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "tutorialmod:random_orb"
+    },
+    "S": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+  ],
+  "result": {
+    "count": 2,
+    "item": "tutorialmod:random_orb"
+  },
+  "show_notification": true
+}

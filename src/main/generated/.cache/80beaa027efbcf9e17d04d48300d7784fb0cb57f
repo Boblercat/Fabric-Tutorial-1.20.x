@@ -1,0 +1,13 @@
+// 1.20.1	2026-01-24T16:10:25.1989041	Tutorial Mod/Tags for minecraft:block
+e357b46602664419af20fa00c008781c943fc3dd data\minecraft\tags\blocks\mineable\pickaxe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
+f2796dbf8bbd0f2be07ed569dd5c133459244833 data\minecraft\tags\blocks\doors.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_5.json
+9be9870c61e176b4f52a9e235416fa37e2adbf6a data\minecraft\tags\blocks\trapdoors.json
+e349294d613dd27844fd01089a72d034cd1df7a2 data\tutorialmod\tags\blocks\metal_detector_detectable_blocks.json
+901624bcbc403715d57dcbd34f5bf84dba578095 data\minecraft\tags\blocks\fence_gates.json
+3c0ed8ae52c50d6efe0a4e2e33e928f6a1ade47e data\minecraft\tags\blocks\walls.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_iron_tool.json
+9edc2c4d8a0746ce1ad4b647ca67aa65dea29ebf data\minecraft\tags\blocks\fences.json
+760a27d4be73e7efd266bdf493bc27537bf09557 data\fabric\tags\blocks\needs_tool_level_4.json

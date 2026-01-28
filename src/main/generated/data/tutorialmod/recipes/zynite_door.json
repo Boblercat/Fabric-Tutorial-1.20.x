@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "tutorialmod:zynite"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "tutorialmod:zynite_door"
+  },
+  "show_notification": true
+}

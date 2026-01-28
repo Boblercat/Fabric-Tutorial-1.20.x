@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "*": {
+      "item": "minecraft:nether_star"
+    },
+    "A": {
+      "item": "minecraft:anvil"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "pattern": [
+    " * ",
+    "IDI",
+    " A "
+  ],
+  "result": {
+    "item": "tutorialmod:metal_detector"
+  },
+  "show_notification": true
+}

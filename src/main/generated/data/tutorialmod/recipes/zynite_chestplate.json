@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "*": {
+      "item": "tutorialmod:zynite"
+    },
+    "E": {
+      "item": "minecraft:nether_star"
+    },
+    "G": {
+      "item": "minecraft:netherite_chestplate"
+    },
+    "S": {
+      "item": "minecraft:smithing_table"
+    }
+  },
+  "pattern": [
+    "*G*",
+    "*E*",
+    "*S*"
+  ],
+  "result": {
+    "item": "tutorialmod:zynite_chestplate"
+  },
+  "show_notification": true
+}

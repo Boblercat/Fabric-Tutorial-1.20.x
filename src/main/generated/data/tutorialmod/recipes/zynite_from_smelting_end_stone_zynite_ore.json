@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.9,
+  "group": "zynite",
+  "ingredient": {
+    "item": "tutorialmod:end_stone_zynite_ore"
+  },
+  "result": "tutorialmod:zynite"
+}

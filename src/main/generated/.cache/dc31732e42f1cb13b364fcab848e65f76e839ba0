@@ -1,0 +1,7 @@
+// 1.20.1	2026-01-24T16:10:25.1999128	Tutorial Mod/World Gen
+bad58f68da83cb74144506e743f591b6265180bf data\tutorialmod\worldgen\placed_feature\nether_zynite_ore_placed.json
+c40bf4b17318945dbdd8b57df7bf02933e6e6338 data\tutorialmod\worldgen\placed_feature\end_zynite_ore_placed.json
+cdf39678755d775ed40a755796fe2a5776b109a4 data\tutorialmod\worldgen\placed_feature\zynite_ore_placed.json
+3d6d3f4c1969da25a6c778e2fa2d7f13dc18eb3f data\tutorialmod\worldgen\configured_feature\zynite_ore.json
+f99ed5aec1c337093006c48377fe3e68c08cf62f data\tutorialmod\worldgen\configured_feature\nether_zynite_ore.json
+ccc651ae52a3578f3e34d68392aec9a4969c0373 data\tutorialmod\worldgen\configured_feature\end_zynite_ore.json

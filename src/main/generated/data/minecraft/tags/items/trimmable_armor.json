@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:zynite_helmet",
+    "tutorialmod:zynite_chestplate",
+    "tutorialmod:zynite_leggings",
+    "tutorialmod:zynite_boots"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:wither_rose"
+    },
+    "R": {
+      "item": "minecraft:iron_nugget"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " B ",
+    " R ",
+    " S "
+  ],
+  "result": {
+    "item": "tutorialmod:withering_shank"
+  },
+  "show_notification": true
+}

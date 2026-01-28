@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "tutorialmod:deepslate_zynite_ore"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 1.0,
+                    "min": 1.0
+                  },
+                  "function": "minecraft:set_count"
+                },
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "tutorialmod:raw_zynite"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.03,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tutorialmod:random_orb"
+        }
+      ],
+      "functions": [
+        {
+          "enchantment": "minecraft:fortune",
+          "formula": "minecraft:ore_drops",
+          "function": "minecraft:apply_bonus"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
